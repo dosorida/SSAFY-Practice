@@ -14,7 +14,7 @@ for test_case in range(1, T + 1):
     N, M = map(int, input().split())  # N: 정수의 개수, M: 구간의 개수
     arr = list(map(int, input().split()))  # 정수들 저장할 arr
 
-    min_sum = 1e7  # 이웃한 M개의 합이 가장 작은 경우
+    min_sum = 1e9  # 이웃한 M개의 합이 가장 작은 경우
     max_sum = 0    # 이웃한 M개의 합이 가장 큰 경우
 
     for i in range(N - M + 1):

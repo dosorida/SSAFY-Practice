@@ -40,7 +40,7 @@ def bus(K, N, M, charge):
             charge_count += 1
 
             # 충전기 설치가 잘못되어 종점에 도착할 수 없는 경우 0 반환
-            if charge_count > M or curr + K < charge[charge_count - 1]:
+            if curr + K < charge[charge_count - 1]:
                 return 0
 
     return charge_count
